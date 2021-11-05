@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SignIn">
+
+
+
+    <ImageView
+
+        android:layout_width="162dp"
+        android:layout_height="157dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.124"
+        app:srcCompat="@drawable/logo" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:textColorHint="@color/colorOrange"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:boxBackgroundMode="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etLoginMail"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shapebg"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/ic_baseline_mail_24"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/ic_baseline_mail_24" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:boxBackgroundMode="none"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColorHint="@color/colorOrange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.585"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/colorOrange"
+        app:passwordToggleTintMode="multiply"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etLoginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shapebg"
+            android:drawableStart="@drawable/ic_baseline_password"
+            android:textColor="@color/black"
+
+
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/ic_baseline_password" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/myLoginBtn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/bg_button"
+        android:text="@string/login"
+        android:textColor="#F8FBFB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.792"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+    <TextView
+        android:id="@+id/gatewayTextSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New User? Register Now"
+        android:textAlignment="center"
+        android:textColor="#001B81"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myLoginBtn"
+        app:layout_constraintVertical_bias="0.219"
+        android:gravity="center_horizontal" />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

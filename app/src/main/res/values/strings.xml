@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ToDo</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="enter_details">Enter Details</string>
+    <string name="client_name">Client Name</string>
+    <string name="subject_headline_topic">Subject/headline/Topic</string>
+    <string name="upload">Upload</string>
+</resources>
